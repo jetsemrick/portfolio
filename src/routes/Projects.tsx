@@ -4,6 +4,12 @@ import ProjectList from '../components/ProjectList'
 const projects: Products = {
   projects: [
     {
+      name: 'Avallon Labs, Inc.',
+      code: 'https://www.avallon.ai/',
+      description: 'Startup venture focused on AI-driven solutions for the auto insurance industry.',
+      date: 'December 2024',
+    },
+    {
       name: 'Quantitative Trading',
       code: 'https://github.com/jetsemrick/quant_trading',
       description: 'Quantitative trading strategies using Python and pandas. Implemented Markowitz portfolio optimization and a moving average strategy.',

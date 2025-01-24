@@ -27,7 +27,7 @@ const ProjectList = ({ projects }: Products) => {
                 rel="noreferrer"
                 className="mt-3 inline-block bg-[#e2e8f0] hover:bg-[#cbd5e1] transition-colors rounded-md px-4 py-2 text-sm font-medium text-gray-900 shadow-sm"
               >
-                View Code
+                View
               </a>
             )}
           </div>
