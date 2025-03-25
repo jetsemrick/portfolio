@@ -9,9 +9,9 @@ export const posts = [
   },
   {
     id: 'post2',
-    title: 'The Case for Kansas City',
+    title: 'Engineering and Debate',
     subheader:
-      'Kansas City is a hidden gem. It is a city that is often overlooked, but it is a great place to live.',
+      'STEM fields are complimented by research and speaking skills in policy debate.',
     author: 'Jet Semrick',
     date: '11-23-2024',
   },

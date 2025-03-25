@@ -27,11 +27,8 @@ const Home = () => {
               Jet Semrick
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Graduate student at{' '}
-              <span className="font-bold">Cornell University</span> and debate coach
-              at <span className="font-bold">Taipei American School</span>. I am based in New York City, but lived in Taipei and
-              Kansas City. Undergrad at the{' '}
-              <span className="font-bold">University of Kansas</span>.
+            Co-founder of <span className="font-bold">Avallon</span>, a startup building AI agents, and policy debate coach at the <span className="font-bold">Taipei American School</span>. I studied computer science at 
+            <span className="font-bold"> Cornell</span> and the <span className="font-bold">University of Kansas</span>. Currently based in NYC.
             </p>
             <div className="mt-6">
               {interests.map((interest) => (
