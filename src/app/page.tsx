@@ -11,11 +11,10 @@ export default function Home() {
     <div className="space-y-16">
       <section className="space-y-6">
         <h1 className="text-3xl font-medium tracking-tight sm:text-4xl text-foreground">
-          Hello, I'm Jet.
+          Jet Semrick
         </h1>
         <p className="max-w-2xl text-lg text-foreground/60 leading-relaxed">
-          I'm a software engineer and designer. I build tools that feel tangible and timeless.
-          Currently exploring the intersection of design systems and AI.
+          I'm a software engineer and debate teacher. Currently, I'm helping build Cursor. Previously, I co-founded Avallon (YCombinator X25) and coached policy debate at the Taipei American School. I studied computer science at the University of Kansas and Cornell Tech. Based in New York City.
         </p>
         <div className="flex gap-4">
           <a
