@@ -39,11 +39,6 @@ export default function Home() {
       </section>
 
       <section>
-        <h2 className="mb-6 text-xl font-medium text-foreground">Projects</h2>
-        <ProjectGrid />
-      </section>
-
-      <section>
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-medium text-foreground">Writing</h2>
           <Link href="/blog" className="text-sm text-foreground/60 hover:text-foreground transition-colors">View all</Link>
@@ -63,6 +58,11 @@ export default function Home() {
              <p className="text-foreground/60 text-sm">No posts found.</p>
           )}
         </div>
+      </section>
+
+      <section>
+        <h2 className="mb-6 text-xl font-medium text-foreground">Projects</h2>
+        <ProjectGrid />
       </section>
     </div>
   );
