@@ -15,7 +15,7 @@ export default function BlogIndex() {
       <div className="space-y-4">
         <h1 className="text-3xl font-medium tracking-tight text-foreground">Writing</h1>
         <p className="text-lg text-foreground/60 max-w-xl">
-          My thoughts on things
+          Essays and commentary
         </p>
       </div>
 

@@ -26,6 +26,9 @@ todos:
   - id: implement-blog
     content: Create Blog and Post pages
     status: completed
+  - id: update-placeholders
+    content: Change placeholder names in writing and projects sections to "Placeholder"
+    status: pending
 ---
 
 # Portfolio Rebuild Plan
@@ -63,3 +66,9 @@ todos:
 
 - [ ] **Home Page (`src/app/page.tsx`)**:
 - **Hero/Intro**: Create a layout with a photo placeholder (left or right aligned) and a natural, narrative introduction text (no "Bio" header).
+
+## 6. Content Updates
+
+- [ ] Update placeholder names to "Placeholder":
+  - In `src/components/ProjectGrid.tsx`: Change "Project Alpha" and "Design System" project titles to "Placeholder".
+  - In `content/posts/hello-world.md`: Change the title from "Hello World" to "Placeholder".

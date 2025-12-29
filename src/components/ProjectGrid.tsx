@@ -8,11 +8,11 @@ export function ProjectGrid() {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       <ProjectCard 
-        title="Project Alpha" 
+        title="Placeholder" 
         description="A minimal task manager for focused work."
       />
       <ProjectCard 
-        title="Design System" 
+        title="Placeholder" 
         description="A comprehensive UI kit for personal projects."
       />
     </div>
