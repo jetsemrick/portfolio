@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "Writing", path: "/blog" },
+  { name: "Writing", path: "/writing" },
 ];
 
 export function Header() {

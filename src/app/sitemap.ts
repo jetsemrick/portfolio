@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://example.com' 
 
   const postUrls = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.id}`,
+    url: `${baseUrl}/writing/${post.id}`,
     lastModified: new Date(post.date),
   }))
 
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/blog`,
+      url: `${baseUrl}/writing`,
       lastModified: new Date(),
     },
     ...postUrls,

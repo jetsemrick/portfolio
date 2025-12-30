@@ -23,7 +23,7 @@ export default function BlogIndex() {
         {allPostsData.map(({ id, date, title, description }) => (
           <article key={id} className="group relative flex flex-col space-y-2">
             <span className="text-sm text-foreground/40">{date}</span>
-            <Link href={`/blog/${id}`} className="block">
+            <Link href={`/writing/${id}`} className="block">
               <h2 className="text-xl font-medium text-foreground group-hover:underline decoration-neutral-400 underline-offset-4">
                 {title}
               </h2>

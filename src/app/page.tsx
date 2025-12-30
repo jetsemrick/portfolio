@@ -41,13 +41,13 @@ export default function Home() {
       <section>
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-medium text-foreground">Writing</h2>
-          <Link href="/blog" className="text-sm text-foreground/60 hover:text-foreground transition-colors">View all</Link>
+          <Link href="/writing" className="text-sm text-foreground/60 hover:text-foreground transition-colors">View all</Link>
         </div>
         <div className="flex flex-col space-y-4">
           {allPostsData.slice(0, 3).map(({ id, date, title }) => (
             <Link
               key={id}
-              href={`/blog/${id}`}
+              href={`/writing/${id}`}
               className="group flex flex-col sm:flex-row sm:items-center justify-between py-3 border-b border-transparent hover:border-neutral-100 dark:hover:border-neutral-800 transition-colors"
             >
               <span className="font-medium text-foreground group-hover:underline decoration-neutral-400 underline-offset-4">{title}</span>
