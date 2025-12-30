@@ -1,15 +1,8 @@
-import React from 'react'
-
-const Footer = () => {
+export function Footer() {
   return (
-    <div className="mt-5 flex bg-[#475569] drop-shadow-lg items-center justify-center">
-      <div className="m-auto w-max h-12">
-        <div className="mt-2.5 text-center text-gray-300">
-          &copy; Jet Semrick 2025
-        </div>
-      </div>
-    </div>
-  )
+    <footer className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-4 py-10 px-6 text-sm text-foreground/60">
+      <p>© {new Date().getFullYear()} Semrick. All rights reserved.</p>
+    </footer>
+  );
 }
 
-export default Footer

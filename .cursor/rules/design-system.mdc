@@ -1,0 +1,39 @@
+---
+description: Design system and UI guidelines for the personal website. Enforces subtle colors, modular components, and modern design principles.
+globs: **/*.{html,css,js,ts,jsx,tsx,mdx,svelte,vue,astro}
+---
+# Design System & UI Guidelines
+
+## Core Philosophy
+- **Subtle & Timeless**: Use a strict monochrome palette. Avoid trendy "tech" aesthetics (neon glows, deep purples/blues).
+- **Content-First**: Design should recede to let the content stand out.
+- **Modular**: Build small, reusable, and composable components.
+
+## Color Palette
+- **Primary**: Black (`#000000` or extremely dark gray like `#111111`) and White (`#FFFFFF`).
+- **Secondary**: Range of neutral grays for borders, backgrounds, and secondary text.
+- **Accents**: Use layout, typography size, and whitespace for emphasis rather than color.
+- **Prohibited**: High-saturation colors, gradients (unless subtle texture), and "AI-generated" generic themes.
+
+## Typography
+- Use a clean, modern sans-serif font family (e.g., Inter, Geist, Helvetica Neue).
+- Ensure high readability with generous line heights (1.5 for body text).
+- Use font weight and size hierarchy to establish order.
+
+## Component Styling
+- **Borders**: Clean, 1px borders in light gray.
+- **Corners**: Slightly rounded.
+  - Small elements (buttons, inputs): `4px` - `6px`.
+  - Large containers (cards, modals): `8px` - `12px`.
+  - *Avoid* fully rounded "pill" shapes unless explicitly required for specific tags/chips.
+- **Shadows**: Minimal or none. Prefer borders or subtle background shifts to define depth.
+
+## Layout & Spacing
+- Use a consistent spacing scale (e.g., 4px base).
+- Prioritize whitespace.
+- Responsive by default.
+
+## Constraints & Anti-Patterns
+- **NO Emojis**: Do not use emojis in UI elements, headings, or body text. Use SVG icons (e.g., Lucide, Heroicons) if iconography is needed.
+- **No "AI Vibes"**: Avoid generic "SaaS landing page" aesthetics, generic 3D illustrations, or abstract gradient blobs.
+- **No Clutter**: Remove non-essential decorative elements.
