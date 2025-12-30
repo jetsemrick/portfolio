@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next'
 import { getSortedPostsData } from '@/lib/posts'
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getSortedPostsData()
   // TODO: Update this with your actual domain
