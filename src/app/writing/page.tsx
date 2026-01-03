@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
 import { Metadata } from "next";
+import { formatDate } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Writing - Portfolio",
@@ -22,7 +23,7 @@ export default function BlogIndex() {
       <div className="flex flex-col space-y-8">
         {allPostsData.map(({ id, date, title, description }) => (
           <article key={id} className="group relative flex flex-col space-y-2">
-            <span className="text-sm text-foreground/40">{date}</span>
+            <span className="text-sm text-foreground/40">{formatDate(date)}</span>
             <Link href={`/writing/${id}`} className="block">
               <h2 className="text-xl font-medium text-foreground group-hover:underline decoration-neutral-400 underline-offset-4">
                 {title}

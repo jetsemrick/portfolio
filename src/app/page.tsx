@@ -3,6 +3,7 @@ import { getSortedPostsData } from "@/lib/posts";
 import { ArrowRight, Github, Twitter } from "lucide-react";
 
 import { ProjectGrid } from "@/components/ProjectGrid";
+import { formatDate } from "@/lib/utils";
 
 export default function Home() {
   const allPostsData = getSortedPostsData();
@@ -51,7 +52,7 @@ export default function Home() {
               className="group flex flex-col sm:flex-row sm:items-center justify-between py-3 border-b border-transparent hover:border-neutral-100 dark:hover:border-neutral-800 transition-colors"
             >
               <span className="font-medium text-foreground group-hover:underline decoration-neutral-400 underline-offset-4">{title}</span>
-              <span className="text-sm text-foreground/40 mt-1 sm:mt-0">{date}</span>
+              <span className="text-sm text-foreground/40 mt-1 sm:mt-0">{formatDate(date)}</span>
             </Link>
           ))}
           {allPostsData.length === 0 && (

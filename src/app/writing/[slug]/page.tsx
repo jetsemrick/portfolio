@@ -1,5 +1,6 @@
 import { getAllPostIds, getPostData } from "@/lib/posts";
 import { Metadata } from "next";
+import { formatDate } from "@/lib/utils";
 
 export async function generateStaticParams() {
   const paths = getAllPostIds();
@@ -24,7 +25,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
   return (
     <article className="space-y-8">
       <header className="space-y-4">
-        <div className="text-sm text-foreground/40">{postData.date}</div>
+        <div className="text-sm text-foreground/40">{formatDate(postData.date)}</div>
         <h1 className="text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
           {postData.title}
         </h1>
