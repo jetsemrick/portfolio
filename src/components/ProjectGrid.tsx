@@ -8,8 +8,9 @@ export function ProjectGrid() {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       <ProjectCard 
-        title="Placeholder" 
-        description="A minimal task manager for focused work."
+        title="Bailey" 
+        description="A debate application for flowing."
+        href="https://bailey.jetsemrick.com"
       />
       <ProjectCard 
         title="Placeholder" 
@@ -19,12 +20,12 @@ export function ProjectGrid() {
   );
 }
 
-function ProjectCard({ title, description }: { title: string; description: string }) {
+function ProjectCard({ title, description, href = "#" }: { title: string; description: string; href?: string }) {
   return (
     <motion.div 
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className="group relative overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 p-6 transition-colors hover:border-neutral-300 hover:shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50 dark:hover:border-neutral-700"
+      className="group relative overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 p-6 transition-colors hover:border-neutral-300 hover:shadow-sm"
     >
        <div className="flex flex-col h-full justify-between">
           <div>
@@ -35,7 +36,7 @@ function ProjectCard({ title, description }: { title: string; description: strin
             <span>View Project</span> <ArrowRight size={12} />
           </div>
        </div>
-       <Link href="#" className="absolute inset-0" />
+       <Link href={href} className="absolute inset-0" target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} />
     </motion.div>
   );
 }

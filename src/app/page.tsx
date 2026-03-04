@@ -49,7 +49,7 @@ export default function Home() {
             <Link
               key={id}
               href={`/writing/${id}`}
-              className="group flex flex-col sm:flex-row sm:items-center justify-between py-3 border-b border-transparent hover:border-neutral-100 dark:hover:border-neutral-800 transition-colors"
+              className="group flex flex-col sm:flex-row sm:items-center justify-between py-3 border-b border-transparent hover:border-neutral-100 transition-colors"
             >
               <span className="font-medium text-foreground group-hover:underline decoration-neutral-400 underline-offset-4">{title}</span>
               <span className="text-sm text-foreground/40 mt-1 sm:mt-0">{formatDate(date)}</span>

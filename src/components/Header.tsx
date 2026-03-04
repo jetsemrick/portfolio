@@ -3,9 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -14,12 +11,6 @@ const navItems = [
 
 export function Header() {
   const pathname = usePathname();
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   return (
     <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-sm transition-all duration-300">
@@ -40,19 +31,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="flex h-9 w-9 items-center justify-center rounded-md border border-neutral-200 bg-transparent text-sm font-medium transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-800 cursor-pointer"
-          aria-label="Toggle theme"
-        >
-          {mounted && (
-            theme === "dark" ? (
-              <Moon size={16} />
-            ) : (
-              <Sun size={16} />
-            )
-          )}
-        </button>
       </div>
     </header>
   );

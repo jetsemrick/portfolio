@@ -31,7 +31,7 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
         </h1>
       </header>
       <div
-        className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-medium prose-a:text-foreground prose-a:decoration-neutral-400 prose-a:underline-offset-4 hover:prose-a:decoration-foreground transition-colors"
+        className="prose prose-neutral max-w-none prose-headings:font-medium prose-a:text-foreground prose-a:decoration-neutral-400 prose-a:underline-offset-4 hover:prose-a:decoration-foreground transition-colors"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml || "" }}
       />
     </article>
