@@ -19,7 +19,7 @@ export default function Home() {
         </p>
         <div className="flex gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/jetsemrick"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
@@ -28,7 +28,7 @@ export default function Home() {
             <span>GitHub</span>
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/jetsemrick"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
